@@ -1,0 +1,36 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "commitlint",
+    "fonteditor",
+    "fontobject",
+    "glyf",
+    "iconify",
+    "noopener",
+    "noreferrer",
+    "preflights",
+    "unocss",
+    "vvenv"
+  ],
+  "ignoreWords": [],
+  "ignoreRegExpList": [
+    "&\\w+;",
+    "\\WG\\-\\w+",
+    "\\WGTM\\-\\w+"
+  ],
+  "files": [
+    "**/*.js",
+    "**/*.json",
+    "**/*.md",
+    "**/*.ts",
+    "**/*.yml"
+  ],
+  "ignorePaths": [
+    "**/.vscode/**",
+    "**/src/generated/**",
+    "**/dist/**",
+    "**/xliff/**",
+    "cspell.json"
+  ]
+}

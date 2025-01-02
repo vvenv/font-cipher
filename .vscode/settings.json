@@ -1,0 +1,35 @@
+{
+  "cSpell.enabledFileTypes": { "*": true },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnSave": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.renderWhitespace": "all",
+  "emmet.triggerExpansionOnTab": true,
+  "eslint.format.enable": true,
+  "eslint.probe": ["javascript", "typescript", "json"],
+  "eslint.validate": ["javascript", "typescript", "json"],
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "npm.registry": "https://registry.yarnpkg.com",
+  "npm.updateStrategy": "SEMVER",
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "html.suggest.html5": true,
+  "html.hover.documentation": true
+}
