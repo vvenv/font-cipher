@@ -1,0 +1,20 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "donjayamanne.githistory",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "github.copilot",
+    "howardzuo.vscode-npm-dependency",
+    "jasonnutter.search-node-modules",
+    "mhutchie.git-graph",
+    "mikestead.dotenv",
+    "pflannery.vscode-versionlens",
+    "runem.lit-plugin",
+    "shd101wyy.markdown-preview-enhanced",
+    "streetsidesoftware.code-spell-checker",
+    "visualstudioexptteam.vscodeintellicode",
+    "webben.browserslist",
+    "eamodio.gitlens"
+  ]
+}
