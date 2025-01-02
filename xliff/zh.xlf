@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+<file target-language="zh" source-language="en" original="lit-localize-inputs" datatype="plaintext">
+<body>
+<trans-unit id="sf626a3b5596e28b9">
+  <source>Generate customized fonts for displaying text content encrypted
+          with Caesar cipher with specified shift number.</source>
+  <target>生成自定义字体，用于显示使用指定移位号的凯撒密码加密的文本内容。</target>
+</trans-unit>
+<trans-unit id="s1087273ae746ef0a">
+  <source>View <x id="0" equiv-text="${locale === 'en' ? '中文' : 'English'}"/> version</source>
+  <target>查看 <x id="0" equiv-text="${locale === 'en' ? '中文' : 'English'}"/> 版本</target>
+</trans-unit>
+<trans-unit id="s5037d6231d5f739f">
+  <source>Font Cipher</source>
+  <target>字体密码</target>
+</trans-unit>
+<trans-unit id="s4f4df9b2d34ceed2">
+  <source>Toggle dark theme</source>
+  <target>切換深色主題</target>
+</trans-unit>
+<trans-unit id="s316b0de8e522ed05">
+  <source>Original text</source>
+  <target>原文</target>
+</trans-unit>
+<trans-unit id="s4729266a82e726e0">
+  <source>Count: <x id="0" equiv-text="${this.originalText.length}"/></source>
+  <target>字符数：<x id="0" equiv-text="${this.originalText.length}"/></target>
+</trans-unit>
+<trans-unit id="s9992087666cca0e0">
+  <source>Shift number</source>
+  <target>移位号</target>
+</trans-unit>
+<trans-unit id="sc9e219154d076d8c">
+  <source>From 1 to 94</source>
+  <target>最小 1，最大 94</target>
+</trans-unit>
+<trans-unit id="sc55d3662bfc2170a">
+  <source>Encrypted text</source>
+  <target>密文</target>
+</trans-unit>
+<trans-unit id="s46aafbff4958e8a9">
+  <source>Font file (.ttf)</source>
+  <target>字体文件（.ttf）</target>
+</trans-unit>
+<trans-unit id="s00e591a6741ae7cc">
+  <source>Generate fonts</source>
+  <target>生成字体</target>
+</trans-unit>
+<trans-unit id="sa18047d273f18c47">
+  <source>Download the generated new fonts</source>
+  <target>下载生成的新字体</target>
+</trans-unit>
+<trans-unit id="sc962fb4fdc9eec19">
+  <source>Download all as ZIP:</source>
+  <target>全部下载为 ZIP 格式：</target>
+</trans-unit>
+</body>
+</file>
+</xliff>
