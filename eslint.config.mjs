@@ -12,7 +12,7 @@ import globals from 'globals';
 // eslint-disable-next-line import/no-default-export
 export default [
   {
-    ignores: ['**/*.json', '**/dist/', '**/node_modules/', ' src/generated/'],
+    ignores: ['**/*.json', '**/dist/', '**/node_modules/', 'src/generated/'],
   },
   {
     plugins: {

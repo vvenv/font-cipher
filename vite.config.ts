@@ -1,12 +1,10 @@
 import { defineConfig } from 'vite';
 import UnoCSS from 'unocss/vite';
 import dynamicImport from 'vite-plugin-dynamic-import'
-import { minifyHTMLLiteralsPlugin } from './vite/minify-html-literals';
-import { minifyIndexHTMLPlugin } from './vite/minify-index-html';
+import { minifyHTMLPlugin } from './.vite/vite-plugin-minify-html';
 
 // eslint-disable-next-line import/no-default-export
-export default defineConfig(({ mode }) => {
-
+export default defineConfig((_env) => {
   return {
     server: {
       open: true,
@@ -21,9 +19,6 @@ export default defineConfig(({ mode }) => {
           hashCharacters: 'hex',
         },
       },
-      minifyHtml: {
-        collapseWhitespace: true,
-      },
     },
     esbuild: {
       legalComments: 'none', // `external` is not supported in Vite
@@ -34,16 +29,11 @@ export default defineConfig(({ mode }) => {
         mode: 'shadow-dom',
       }),
       dynamicImport(),
-      minifyIndexHTMLPlugin({
+      minifyHTMLPlugin({
         collapseWhitespace: true,
+        generateSourceMap: false,
         minifyCSS: true,
         minifyJS: true,
-      }),
-      minifyHTMLLiteralsPlugin({
-        generateSourceMap: false,
-        minifyOptions: {
-          collapseWhitespace: true,
-        },
       }),
     ],
   };
