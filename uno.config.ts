@@ -16,21 +16,21 @@ export default defineConfig({
   transformers: [transformerDirectives()],
   theme: {
     colors: {
-      default: 'var(--ak-text-color)',
+      default: 'rgb(var(--ak-text-color) / <alpha-value>)',
     },
     backgroundColor: {
-      default: 'var(--ak-bg-color)',
+      default: 'rgb(var(--ak-bg-color) / <alpha-value>)',
     },
   },
   preflights: [
     {
       getCSS: () => `:root {
-        --ak-text-color: #333;
-        --ak-bg-color: #fff;
+        --ak-text-color: 40 44 52;
+        --ak-bg-color: 171 178 191;
       }
       :root.dark {
-        --ak-text-color: #fff;
-        --ak-bg-color: #333;
+        --ak-text-color: 171 178 191;
+        --ak-bg-color: 40 44 52;
       }
       body {
         @apply p-12 bg-default text-default transition-colors;

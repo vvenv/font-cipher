@@ -24,17 +24,17 @@ export class AkHeader extends LitElement {
   connectedCallback(): void {
     super.connectedCallback();
 
-    document.title = msg(str`Font Cipher`);
+    document.title = msg('Font Cipher');
   }
 
   protected render() {
     const locale = getLocale();
 
     return html`<div class="flex items-center justify-between">
-        <h1 class="text-3xl">${msg(str`Font Cipher`)}</h1>
+        <h1 class="text-3xl">${msg('Font Cipher')}</h1>
         <div class="flex items-center gap-2">
           <a
-            class="text-default hover:text-blue-6"
+            class="text-default hover:text-sky-6"
             href=${`?lang=${locale === 'en' ? 'zh' : 'en'}`}
             title=${msg(
               str`View ${locale === 'en' ? '中文' : 'English'} version`,
@@ -43,9 +43,9 @@ export class AkHeader extends LitElement {
             <i class="i-heroicons-language-solid size-6 block"></i>
           </a>
           <button
-            class="h-6 w-6 p-0 relative border-none bg-transparent cursor-pointer text-default hover:text-blue-6"
+            class="h-6 w-6 p-0 relative border-none bg-transparent cursor-pointer text-default hover:text-sky-6"
             type="button"
-            title=${msg(str`Toggle dark theme`)}
+            title=${msg('Toggle dark theme')}
             @click=${() => {
               document.documentElement.classList.toggle('dark');
               localStorage.setItem(
@@ -67,7 +67,7 @@ export class AkHeader extends LitElement {
       </div>
       <p class="text-xl mt-0 mb-12">
         ${msg(
-          str`Generate customized fonts for displaying text content encrypted
+          `Generate customized fonts for displaying text content encrypted
           with Caesar cipher with specified shift number.`,
         )}
       </p>`;

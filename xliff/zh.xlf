@@ -55,6 +55,10 @@
   <source>Font file</source>
   <target>字体文件</target>
 </trans-unit>
+<trans-unit id="s527ef971ebc6a2d8">
+  <source>Please select a normal font file</source>
+  <target>请选择正常的字体文件</target>
+</trans-unit>
 </body>
 </file>
 </xliff>

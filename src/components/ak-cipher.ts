@@ -54,20 +54,20 @@ export class AkCipher extends LitElement {
         <label for="original-text">${msg('Original text')}</label>
         <textarea
           id="original-text"
-          class="border-none rounded-sm p-3 break-all outline-1 outline-solid outline-gray-3"
+          class="border-none bg-transparent text-default rounded-sm p-3 break-all outline-1 outline-solid outline-default"
           .value=${this.originalText}
           @input=${this.onOriginalTextChange}
           @blur=${this.encrypt}
         ></textarea>
-        <span class="text-neutral-4 text-sm -mt-1">
+        <span class="text-default/80 text-sm -mt-1">
           ${msg(str`Count: ${this.originalText.length}`)}
         </span>
       </div>
       <div class="flex flex-col gap-2">
-        <label for="shift-number">${msg(str`Shift number`)}</label>
+        <label for="shift-number">${msg('Shift number')}</label>
         <input
           id="shift-number"
-          class="border-none rounded-sm p-3 outline-1 outline-solid outline-gray-3"
+          class="border-none bg-transparent text-default rounded-sm p-3 outline-1 outline-solid outline-default"
           type="number"
           min="1"
           max="94"
@@ -75,7 +75,7 @@ export class AkCipher extends LitElement {
           @input=${this.onShiftNumberChange}
           @blur=${this.encrypt}
         />
-        <span class="text-neutral-4 text-sm -mt-1">
+        <span class="text-default/80 text-sm -mt-1">
           ${msg('From 1 to 94')}
         </span>
       </div>
@@ -83,24 +83,34 @@ export class AkCipher extends LitElement {
         <label for="encrypted-text">${msg('Encrypted text')}</label>
         <textarea
           id="encrypted-text"
-          class="border-none rounded-sm p-3 break-all outline-1 outline-solid outline-gray-3"
+          class="border-none bg-transparent text-default rounded-sm p-3 break-all outline-1 outline-solid outline-default"
           .value=${this.encryptedText}
           readonly
         ></textarea>
       </div>
       <div class="flex flex-col gap-2">
         <label for="font-file">${msg('Font file')}</label>
-        <input
-          id="font-file"
-          class="border-none rounded-sm py-2"
-          type="file"
-          accept=".eot,.ttf,.woff,.woff2"
-          @input=${this.onFontFileChange}
-        />
+        <div>
+          <input
+            id="font-file"
+            class="border-none rounded-sm py-2 opacity-0 absolute"
+            type="file"
+            accept=".eot,.ttf,.woff,.woff2"
+            @input=${this.onFontFileChange}
+          />
+          <label
+            class="i-heroicons-plus-circle-solid block size-12 cursor-pointer hover:text-sky-6"
+            for="font-file"
+          ></label>
+        </div>
+        <span class="text-default/80 text-sm -mt-1">
+          ${this.originalFontFile?.name ||
+          msg('Please select a normal font file')}
+        </span>
       </div>
       <div class="flex flex-col gap-2 mt-4">
         <button
-          class="border-1 border-solid border-transparent rounded-sm p-3 bg-lime-7 hover:border-lime-6 active:border-lime-8 text-white text-base cursor-pointer disabled:bg-neutral-4 disabled:cursor-not-allowed"
+          class="border-1 border-solid border-transparent rounded-sm p-3 bg-sky-7 hover:border-sky-6 active:border-sky-8 text-white text-base cursor-pointer disabled:text-gray-3 disabled:bg-gray-4 disabled:cursor-not-allowed disabled:hover:border-gray-4 disabled:active:border-gray-4"
           type="button"
           ?disabled=${!this.originalFontFile || !this.originalText}
           @click=${this.generateFonts}
@@ -162,7 +172,7 @@ export class AkCipher extends LitElement {
           this.generatedFontFiles,
           (file) =>
             html`<a
-                class="text-blue-6 underline flex items-center gap-1"
+                class="text-sky-6 underline flex items-center gap-1"
                 href=${URL.createObjectURL(file)}
                 download=${file.name}
                 target="_blank"
@@ -170,7 +180,7 @@ export class AkCipher extends LitElement {
               >
                 <span>${file.name}</span>
               </a>
-              <span>${prettyBytes(file.size)}</span>`,
+              <span class="text-right">${prettyBytes(file.size)}</span>`,
         )}
       </div>
       <a
