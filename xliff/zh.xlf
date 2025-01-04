@@ -39,10 +39,6 @@
   <source>Encrypted text</source>
   <target>密文</target>
 </trans-unit>
-<trans-unit id="s46aafbff4958e8a9">
-  <source>Font file (.ttf)</source>
-  <target>字体文件（.ttf）</target>
-</trans-unit>
 <trans-unit id="s00e591a6741ae7cc">
   <source>Generate fonts</source>
   <target>生成字体</target>
@@ -54,6 +50,10 @@
 <trans-unit id="sc962fb4fdc9eec19">
   <source>Download all as ZIP:</source>
   <target>全部下载为 ZIP 格式：</target>
+</trans-unit>
+<trans-unit id="sa08f6e1d0e585406">
+  <source>Font file</source>
+  <target>字体文件</target>
 </trans-unit>
 </body>
 </file>

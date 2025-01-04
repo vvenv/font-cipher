@@ -51,7 +51,7 @@ export class AkCipher extends LitElement {
   protected render() {
     return html`<div class="flex flex-col gap-4">
       <div class="flex flex-col gap-2">
-        <label for="original-text">${msg(str`Original text`)}</label>
+        <label for="original-text">${msg('Original text')}</label>
         <textarea
           id="original-text"
           class="border-none rounded-sm p-3 break-all outline-1 outline-solid outline-gray-3"
@@ -76,11 +76,11 @@ export class AkCipher extends LitElement {
           @blur=${this.encrypt}
         />
         <span class="text-neutral-4 text-sm -mt-1">
-          ${msg(str`From 1 to 94`)}
+          ${msg('From 1 to 94')}
         </span>
       </div>
       <div class="flex flex-col gap-2">
-        <label for="encrypted-text">${msg(str`Encrypted text`)}</label>
+        <label for="encrypted-text">${msg('Encrypted text')}</label>
         <textarea
           id="encrypted-text"
           class="border-none rounded-sm p-3 break-all outline-1 outline-solid outline-gray-3"
@@ -89,12 +89,12 @@ export class AkCipher extends LitElement {
         ></textarea>
       </div>
       <div class="flex flex-col gap-2">
-        <label for="font-file">${msg(str`Font file (.ttf)`)}</label>
+        <label for="font-file">${msg('Font file')}</label>
         <input
           id="font-file"
           class="border-none rounded-sm py-2"
           type="file"
-          accept=".ttf"
+          accept=".eot,.ttf,.woff,.woff2"
           @input=${this.onFontFileChange}
         />
       </div>
@@ -105,7 +105,7 @@ export class AkCipher extends LitElement {
           ?disabled=${!this.originalFontFile || !this.originalText}
           @click=${this.generateFonts}
         >
-          ${msg(str`Generate fonts`)}
+          ${msg('Generate fonts')}
         </button>
         ${this.renderFontDownload()}
       </div>
@@ -156,7 +156,7 @@ export class AkCipher extends LitElement {
       return nothing;
     }
 
-    return html`<p>${msg(str`Download the generated new fonts`)}</p>
+    return html`<p>${msg('Download the generated new fonts')}</p>
       <div class="grid grid-cols-[1fr_auto] gap-2">
         ${repeat(
           this.generatedFontFiles,
@@ -180,7 +180,7 @@ export class AkCipher extends LitElement {
         target="_blank"
         rel="noopener noreferrer"
       >
-        ${msg(str`Download all as ZIP:`)}
+        ${msg('Download all as ZIP:')}
         <span>${this.zipFile.name}</span>
         <span>${prettyBytes(this.zipFile.size)}</span>
       </a>`;

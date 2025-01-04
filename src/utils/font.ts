@@ -1,10 +1,10 @@
-import { Font, woff2 } from 'fonteditor-core';
+import { Font, FontEditor, woff2 } from 'fonteditor-core';
 
 export const generateFonts = async (file: File, original: string, shift: number) => {
   const buffer = await file.arrayBuffer();
 
   const font = Font.create(buffer, {
-    type: 'ttf',
+    type: (file.name.split('.').pop() as FontEditor.FontType) || 'ttf',
     subset: Array.from(new Set([...original].map((char) => char.charCodeAt(0)))),
   });
 
