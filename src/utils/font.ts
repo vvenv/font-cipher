@@ -1,6 +1,8 @@
 import { Font, FontEditor, woff2 } from 'fonteditor-core';
 
 export const generateFonts = async (file: File, original: string, shift: number) => {
+  await woff2.init('/woff2.wasm');
+
   const buffer = await file.arrayBuffer();
 
   const font = Font.create(buffer, {
@@ -29,8 +31,6 @@ export const generateFonts = async (file: File, original: string, shift: number)
   const woffFile = new File([font.write({
     type: 'woff',
   })], 'encrypted.woff', { type: 'font/woff' });
-
-  await woff2.init('/woff2.wasm');
 
   const woff2File = new File([font.write({
     type: 'woff2',
