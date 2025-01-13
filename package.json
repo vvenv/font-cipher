@@ -36,7 +36,7 @@
     "@iconify-json/heroicons": "^1.2.2",
     "@lit/localize-tools": "^0.8.0",
     "@types/eslint__js": "^8.42.3",
-    "@types/node": "^22.10.3",
+    "@types/node": "^22.10.6",
     "@typescript-eslint/eslint-plugin": "^8.19.0",
     "@typescript-eslint/parser": "^8.19.0",
     "cspell": "^8.17.1",
