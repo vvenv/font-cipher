@@ -1,4 +1,7 @@
-# Font Cipher
+# [🌐 Font Cipher](https://font-cipher.vercel.app/)
+
+[![Test](https://github.com/vvenv/font-cipher/actions/workflows/test.yml/badge.svg)](https://github.com/vvenv/font-cipher/actions/workflows/test.yml) [![Coverage](https://vvenv.github.io/font-cipher/badges/coverage.svg)](https://github.com/vvenv/font-cipher/actions/workflows/test.yml)
+
 
 ## Development
 
