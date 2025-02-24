@@ -1396,10 +1396,15 @@
     "@unocss/preset-mini" "65.4.3"
     "@unocss/rule-utils" "65.4.3"
 
-"@unocss/reset@65.4.3", "@unocss/reset@^65.4.3":
+"@unocss/reset@65.4.3":
   version "65.4.3"
   resolved "https://registry.yarnpkg.com/@unocss/reset/-/reset-65.4.3.tgz#3dce634c6730a1f17e9c513e10927761dd5e2973"
   integrity sha512-f9QnMtY1yPS1HEIkeKmSwUYcp4QS6zdo9ZcIFE9PDSLOcns3v+M1lTQg8mLChxJHVl73Cf6PofWVh5tmnxV53Q==
+
+"@unocss/reset@^66.0.0":
+  version "66.0.0"
+  resolved "https://registry.yarnpkg.com/@unocss/reset/-/reset-66.0.0.tgz#8e3301206ab315d3287fb133be6f03e60a3ebdd4"
+  integrity sha512-YLFz/5yT7mFJC8JSmIUA5+bS3CBCJbtztOw+8rWzjQr/BEVSGuihWUUpI2Df6VVxXIXxKanZR6mIl59yvf+GEA==
 
 "@unocss/rule-utils@65.4.3":
   version "65.4.3"
