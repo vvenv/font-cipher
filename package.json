@@ -46,7 +46,7 @@
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-lit": "^1.15.0",
     "eslint-plugin-prettier": "^5.2.3",
-    "eslint-plugin-unused-imports": "^4.1.4",
+    "eslint-plugin-unused-imports": "^4.2.0",
     "eslint-plugin-wc": "^2.2.0",
     "globals": "^16.0.0",
     "html-minifier": "^4.0.0",
